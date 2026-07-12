@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+        <script
+            src="https://kit.fontawesome.com/411a2164a8.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="flex">
+        <main class="container flex">
+            <section class="header">
+                <h1>Your To Do</h1>
+            </section>
+            <section class="todoInput">
+                <form class="flex">
+                    <input
+                        type="text"
+                        placeholder="Add new task"
+                        id="taskInput"
+                    />
+                    <button type="button" id="addTask">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+            </section>
+            <section class="todoContainer flex"></section>
+            <section class="remainderContainer">
+                <p class="remainder" id="remainder">Your remaining todos: 1</p>
+            </section>
+            <section class="quote">
+                <p>
+                    "I long to accomplish a great and noble task, but it is my
+                    chief duty to accomplish small tasks as if they were great
+                    and noble." — Helen Keller
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

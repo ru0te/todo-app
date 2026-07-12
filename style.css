@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 80vw;
+    max-width: 500px;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container section {
+    width: 100%;
+}
+
+form {
+    gap: 1rem;
+}
+
+.todoInput {
+    input {
+        border: none;
+        border-bottom: 1px solid #1e1e1e;
+        padding: 5px;
+        width: 100%;
+        font-size: 16px;
+    }
+    input::placeholder {
+        color: grey;
+        opacity: 0.7;
+    }
+    button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 25%;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+.todoContainer {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo {
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.quote {
+    color: darkgrey;
+    font-style: italic;
+}
