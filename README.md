@@ -31,7 +31,7 @@ Here are some screenshots of the application in action:
 
 ## Design Inspiration
 
-The design of this Todo App was inspired a Dribbble shot by [Arkan Naufal]. I have made a few personal tweaks and modifications to the original design to suit my own preferences.
+The design of this Todo App was inspired a Dribbble shot by <strong>Arkan Naufal</strong>. I have made a few personal tweaks and modifications to the original design to suit my own preferences.
 
 ## Author
 
