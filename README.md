@@ -11,6 +11,7 @@ A simple and intuitive web-based Todo application. This app allows users to add,
 - Delete tasks individually.
 - Keeps track of the number of remaining (incomplete) todos.
 - User-friendly interface.
+- Local Storage
 
 ## Technologies Used
 
