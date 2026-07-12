@@ -35,4 +35,4 @@ The design of this Todo App was inspired a Dribbble shot by <strong>Arkan Naufal
 
 ## Author
 
-[ru0te]
+<strong>ru0te</strong>
