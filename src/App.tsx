@@ -23,8 +23,12 @@ function App() {
     setTodos((prevTodos) => (prevTodos ?? []).filter((todo) => todo.id !== id));
   }
 
-  function handleDeleteAllTodos() {
-    setTodos(null);
+  function handleToggleTodo(id: string): void {
+    setTodos((prevTodos) =>
+      (prevTodos ?? []).map((todo) =>
+        todo.id === id ? { ...todo, isComplete: !todo.isComplete } : todo,
+      ),
+    );
   }
 
   return (
@@ -50,11 +54,10 @@ function App() {
               isComplete={todo.isComplete}
               key={todo.id}
               onDelete={() => handleDeleteTodo(todo.id)}
+              onToggle={() => handleToggleTodo(todo.id)}
             />
           ))}
         </ul>
-
-        <button onClick={handleDeleteAllTodos}>Delete all todos</button>
       </div>
     </>
   );

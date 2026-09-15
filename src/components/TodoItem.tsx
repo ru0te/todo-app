@@ -9,17 +9,24 @@ export interface Todo {
 
 interface TodoItemProps extends Todo {
   onDelete: (id: string) => void;
+  onToggle: (id: string) => void;
 }
 
-function TodoItem({ name, id, isComplete, onDelete }: TodoItemProps) {
+function TodoItem({ name, id, isComplete, onDelete, onToggle }: TodoItemProps) {
   return (
     <>
-      <li className={`todo ${isComplete ? "completed" : ""}`}>
+      <li
+        className={`todo ${isComplete ? "completed" : ""}`}
+        onClick={() => onToggle(id)}
+      >
         <p>{name}</p>
         <button
           type="button"
           aria-label="Delete todo"
-          onClick={() => onDelete(id)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onDelete(id);
+          }}
         >
           <FontAwesomeIcon icon={faTrash} />
         </button>
